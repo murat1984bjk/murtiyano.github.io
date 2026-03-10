@@ -5,68 +5,236 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FRROGY Privacy Policy</title>
   <style>
+    :root {
+      --bg: #05080d;
+      --card: linear-gradient(90deg, rgba(18,28,44,0.95) 0%, rgba(12,18,30,0.98) 100%);
+      --border: rgba(160, 180, 210, 0.16);
+      --text: #f4f7fb;
+      --muted: #c9d2de;
+      --green: #49e05f;
+      --link: #6db8ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #0b0d10;
-      color: #f5f7fa;
-      line-height: 1.7;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(23, 60, 110, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(16, 90, 70, 0.16), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
+
     .wrap {
-      max-width: 920px;
+      width: 100%;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 48px 24px;
+      padding: 36px 28px 56px;
     }
-    h1 { color: #39d353; font-size: 42px; margin-bottom: 8px; }
-    h2 { color: #7ee787; margin-top: 34px; }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: 60px;
+      line-height: 1.05;
+      font-weight: 800;
+      color: var(--green);
+      letter-spacing: -0.02em;
+    }
+
+    .updated {
+      margin: 0 0 28px;
+      font-size: 18px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    h2 {
+      margin: 34px 0 16px;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--green);
+      letter-spacing: -0.01em;
+    }
+
     .card {
-      background: #151a21;
-      border: 1px solid #2b3137;
-      border-radius: 18px;
-      padding: 24px;
-      margin-top: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px 28px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
     }
-    a { color: #58a6ff; }
-    .muted { color: #b8c0cc; }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 14px 0 0 22px;
+      padding: 0 0 0 18px;
+      color: var(--text);
+    }
+
+    li {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    .note {
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        padding: 28px 18px 48px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .card {
+        border-radius: 20px;
+        padding: 22px 18px;
+      }
+
+      p, li, .updated {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <main class="wrap">
     <h1>FRROGY Privacy Policy</h1>
-    <p class="muted">Son güncelleme: 8 Mart 2026</p>
+    <p class="updated">Son güncelleme: 10 Mart 2026</p>
 
-    <div class="card">
-      <p>FRROGY kullanıcı gizliliğine önem verir.</p>
-      <p>FRROGY genel olarak kullanıcıdan hesap oluşturmasını istemez ve kişisel veri toplamaz.</p>
-    </div>
+    <section class="card">
+      <p><strong>FRROGY</strong> kullanıcı gizliliğine önem verir.</p>
+      <p>
+        FRROGY genel olarak kullanıcıdan hesap oluşturmasını istemez. Oyun ilerlemesi ve bazı ayarlar cihaz üzerinde yerel olarak saklanabilir.
+      </p>
+      <p>
+        Bununla birlikte, uygulamada reklam gösterimi için kullanılan <strong>Google AdMob</strong> gibi üçüncü taraf hizmetler,
+        kendi çalışmaları kapsamında bazı teknik ve reklamla ilişkili verileri toplayabilir.
+      </p>
+    </section>
 
     <h2>İzinler</h2>
-    <div class="card">
-      <p><strong>Kamera izni:</strong> Yalnızca isteğe bağlı kafa hareketi ile kontrol özelliğini sağlamak için kullanılır.</p>
-    </div>
+    <section class="card">
+      <p>
+        <strong>Kamera izni:</strong> Yalnızca isteğe bağlı kafa hareketi ile kontrol özelliğini sağlamak için kullanılır.
+        Kamera görüntüsü FRROGY tarafından kullanıcı hesabı oluşturmak, kullanıcıyı tanımlamak veya cihaz dışına aktarmak amacıyla kullanılmaz.
+      </p>
+    </section>
+
+    <h2>Toplanabilen Veriler</h2>
+    <section class="card">
+      <p>
+        FRROGY doğrudan üyelik, isim, e-posta veya telefon numarası istemez. Ancak reklam ve uygulama performansı için kullanılan üçüncü taraf hizmetler aşağıdaki veri kategorilerini işleyebilir:
+      </p>
+      <ul>
+        <li><strong>Yaklaşık konum (Coarse Location):</strong> IP adresi üzerinden genel konum tahmini</li>
+        <li><strong>Cihaz Kimliği (Device ID):</strong> reklam ve ölçüm amaçlı cihaz tanımlayıcıları</li>
+        <li><strong>Ürün Etkileşimi (Product Interaction):</strong> reklam izleme, tıklama, görüntüleme ve uygulama içi etkileşim bilgileri</li>
+        <li><strong>Reklam Verisi (Advertising Data):</strong> kullanıcının gördüğü veya etkileşime geçtiği reklamlarla ilgili veriler</li>
+        <li><strong>Çökme Verisi (Crash Data):</strong> hata ve çökme kayıtları</li>
+        <li><strong>Performans Verisi (Performance Data):</strong> uygulama ve SDK performansına ilişkin teknik veriler</li>
+      </ul>
+      <p class="note">
+        Bu veriler özellikle üçüncü taraf reklam ve analiz hizmetleri tarafından, reklam sunumu, ölçümleme, hata ayıklama ve performans iyileştirme amaçlarıyla işlenebilir.
+      </p>
+    </section>
 
     <h2>Toplanmayan Veriler</h2>
-    <div class="card">
-      <p>FRROGY aşağıdaki verileri toplamaz veya satmaz:</p>
+    <section class="card">
+      <p>FRROGY aşağıdaki verileri doğrudan istemez veya toplamaz:</p>
       <ul>
-        <li>Kişisel hesap bilgileri</li>
-        <li>Konum verisi</li>
+        <li>Ad, soyad ve hesap bilgileri</li>
+        <li>E-posta adresi ve telefon numarası</li>
         <li>Rehber bilgileri</li>
-        <li>Mesajlar</li>
+        <li>Mesajlar ve içerikleri</li>
         <li>Fotoğraf galerisi verileri</li>
+        <li>Ses kayıtları</li>
+        <li>Kesin konum bilgisi (Precise Location)</li>
+        <li>Ödeme kartı veya banka hesap bilgileri</li>
       </ul>
-    </div>
+    </section>
 
     <h2>Cihaz Üzerinde Saklanan Veriler</h2>
-    <div class="card">
-      <p>Oyun ilerlemesi, ayarlar ve bazı oyun verileri cihaz üzerinde yerel olarak saklanabilir.</p>
-    </div>
+    <section class="card">
+      <p>
+        Oyun ilerlemesi, ayarlar ve bazı oyun verileri cihaz üzerinde yerel olarak saklanabilir.
+        Bu veriler FRROGY tarafından ayrı bir kullanıcı hesabı ile eşleştirilmez.
+      </p>
+    </section>
+
+    <h2>Üçüncü Taraf Hizmetler</h2>
+    <section class="card">
+      <p>
+        FRROGY, uygulama içinde reklam göstermek için üçüncü taraf hizmetler kullanabilir.
+        Bu hizmetler kendi gizlilik politikaları kapsamında veri işleyebilir.
+      </p>
+      <p>
+        Kullanılan başlıca hizmet:
+      </p>
+      <ul>
+        <li><strong>Google AdMob</strong> – reklam gösterimi, reklam ölçümleme, hata ayıklama ve performans iyileştirme</li>
+      </ul>
+      <p>
+        Üçüncü taraf hizmetlerin veri işleme faaliyetleri kendi politikalarına tabidir.
+      </p>
+    </section>
+
+    <h2>Verilerin Kullanım Amaçları</h2>
+    <section class="card">
+      <p>Toplanan veya işlenen teknik ve reklam verileri aşağıdaki amaçlarla kullanılabilir:</p>
+      <ul>
+        <li>Üçüncü taraf reklam gösterimi</li>
+        <li>Reklam performansının ölçülmesi</li>
+        <li>Uygulama kararlılığının ve performansının iyileştirilmesi</li>
+        <li>Hata ve çökme sorunlarının analiz edilmesi</li>
+        <li>Genel kullanım analitiği</li>
+      </ul>
+    </section>
+
+    <h2>Çocukların Gizliliği</h2>
+    <section class="card">
+      <p>
+        FRROGY, kullanıcılarından bilerek hesap bilgisi veya doğrudan kişisel iletişim verisi toplamaz.
+        Uygulamada kullanılan üçüncü taraf reklam hizmetleri için geçerli yaşa uygunluk ve reklam ayarları geliştirici tarafından ayrıca yönetilebilir.
+      </p>
+    </section>
 
     <h2>İletişim</h2>
-    <div class="card">
+    <section class="card">
       <p>Gizlilik ile ilgili sorularınız için:</p>
       <p><a href="mailto:murtiyano@msn.com">murtiyano@msn.com</a></p>
-    </div>
-  </div>
+    </section>
+  </main>
 </body>
 </html>
